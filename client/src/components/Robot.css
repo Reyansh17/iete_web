@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+.robo{
+  
+    /* transform: scale(1.5); */
+    position: absolute;
+    top: 200vh;
+    right: -50vw;
+ display: flex;
+ z-index: 0;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.animatedWords{
+color: gold;
+font-size: 5vw;
+animation-delay: 2s;
+animation: fadeIn 2s infinite;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;
+    transform: translateY(-2vw);
+    color: yellow; }
+    50%{
+        color: goldenrod;
+    }
+    100% { opacity: 1; color: rgb(229, 255, 0);
+        transform: translateY(0vw);
+}
+  }
+
+
+
+  .roboButton {  
+    margin-left: 10vw;
+    padding: 0.75em 2em;
+    font-size: 1.25rem; 
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    text-shadow: 0 5px 20px rgba(192, 36, 0, 0.4), 0 2px 2px rgba(192, 36, 0, 0.4);
+    background-image: radial-gradient(
+      100% 75% at 50% 100%,
+      #e7a600 0%,
+      #eded53 100%
+    );
+    border: none;
+    border-radius: 100px;
+   
+  
+    transition: 0.2s ease-in-out;      
+
+    &:hover {
+        cursor: pointer;
+      outline: none;
+      color: #f9e3bf;
+      background-image: radial-gradient(
+        100% 75% at 50% 100%,
+        #e46b00 0%,
+        #f4bb00 100%
+      );
+      
+    }
+  }
+
+  
+.relative{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.fakeMargin{
+    margin-top: 20vh;
+}
+
+
+@media screen and (min-width:800px) {
+    .robo{
+        top: -40vh;
+        right: -50vw;
+    }
+    
+.fakeMargin{
+    margin-top: 120vh;
+}
+}
+
+
+body{
+    overflow-x: hidden;
+}
+@media screen and (max-width: 500px) {
+    .robo {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       font-size: 2vw;
+    }
+   
+    .roboButton {
+       font-size: 1rem;
+       padding: 0.5em 1.5em;
+    }
+   }
