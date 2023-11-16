@@ -88,7 +88,7 @@ animation-timing-function: ease-in-out;
     }
     
 .fakeMargin{
-    margin-top: 120vh;
+    margin-top: 10vh;
 }
 }
 
@@ -96,17 +96,27 @@ animation-timing-function: ease-in-out;
 body{
     overflow-x: hidden;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 858px) {
     .robo {
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       font-size: 2vw;
+        position: absolute;
+        top: 0; /* Adjust the percentage to your liking */
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 2vw;
+        margin-top: 2vw;
     }
    
     .roboButton {
        font-size: 1rem;
        padding: 0.5em 1.5em;
+       align-items: center;
+       margin-left: 30vw;
+       
     }
+    .ani{
+        top: -10;
+        color: white;
+    }
+
+    
    }

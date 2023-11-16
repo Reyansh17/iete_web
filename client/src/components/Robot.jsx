@@ -27,10 +27,10 @@ export default function Robo() {
 
 
     return (
-        <div>
+        <div className="parent" >
 
-            <div className="relative">
-                <div style={{ marginBottom: "80vh", color: "white" }}>
+            <div className="relative" >
+                <div style={{ marginBottom: "80vh", color: "white" }} className="ani">
                     <h3 style={{ fontSize: "7vw", marginLeft: "4vh" ,marginTop:"20vh"}}>Welcome to <br /><div className="animatedWords">{words[wordsIndex]}</div> </h3>
                 </div>
                 

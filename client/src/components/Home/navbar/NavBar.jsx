@@ -1,34 +1,42 @@
-import React from 'react'
-import './NavBar.css'
+import React from 'react';
+import './NavBar.css';
 
 export default function NavBar() {
- return (
-    <div className="navbar">
-      <div style={{ display: 'flex', margin: '0 2vw' }}>
-        <img src='/src/assets/logo_home.png' height={"70px"} style={{ borderRadius: "30px" }} />
-        <h3 style={{ marginLeft: "1vw", marginTop: "1.5rem" }}>
-          IETE
-        </h3>
-      </div>
-
-      <div style={{ display: "flex", gap: "2rem", lineHeight: "4.5rem", margin: "0 2vw" }}>
-
-      <a  className="btn-1">
+  return (
+    <>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+      <nav>
+        <input type="checkbox" id="check" />
+        <label htmlFor="check" className="checkbtn">
+          <i className="fas fa-bars" />
+        </label>
+        <label className="logo">IETE</label>
+        <ul>
+          <li>
+            <a className="active" href="#">
               Home
-         </a>
-        <a className="btn-1">
-          About
-        </a>
-        <a className="btn-1">
-          Projects
-        </a>
-        <a className="btn-1">
-          Team
-        </a>
-        <a className="btn-1">
-          Contact
-        </a>
-      </div>
-    </div>
- )
+            </a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Annoucements</a>
+          </li>
+        </ul>
+      </nav>
+    </>
+  );
 }
